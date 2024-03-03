@@ -1,14 +1,14 @@
 #include <iostream>
-#define CATCH_CONFIG_RUNNER
+//#define CATCH_CONFIG_RUNNER
 #include "List.h"
-#include "catch.hpp"
+//#include "catch.hpp"
 using namespace std;
 
 int main(void)
 {
-    int  result = Catch::Session().run();
+    //int  result = Catch::Session().run();
     int  i;
-    List MyList;
+    List<int> MyList;
 
     for (i = 0; i < 10; i++)
     {
@@ -28,8 +28,8 @@ int main(void)
         cout << i << " ";
     cout << endl << endl;
 
-    List  MyList1, MyList2, MyList3;
-    List* MyList_dyn = new List();
+    List<int>  MyList1, MyList2, MyList3;
+    List<int>* MyList_dyn = new List<int>();
 
     for (i = 0; i < 10; i++)
     {
@@ -67,15 +67,6 @@ int main(void)
         cout << "MyList3: Zeiger OK\n\n";
     else
         cout << "MyList3: Zeiger ******Error\n\n";
-
-    List test;
-    for (int i = 0; i < 10; i++)
-    {
-        test.insertBack(i+1);
-    }
-    test.print();
-    test.swap(6, 7);
-    test.print();
 
     system("PAUSE");
     return 0;

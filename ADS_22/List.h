@@ -42,6 +42,7 @@ public:
     void format(const std::string& start,
                 const std::string& zwischen,
                 const std::string& ende);
+    void print();
     // Mit der format-Methode kann die Ausgabe gesteuert werden: operator <<
     // start: stirng vor der Ausgabe der Liste
     // zwischen: string zwischen Listenknoten

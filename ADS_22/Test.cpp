@@ -183,8 +183,7 @@ TEST_CASE("List Testing", "[List]")
         REQUIRE(value == 0);
 
         //////////////////////////////////////////////////////////////////////////
-        // Fall 2: Erster Knoten mit einem aus der Mitte, nicht nebeneinander
-        // //
+        // Fall 2: Erster Knoten mit einem aus der Mitte, nicht nebeneinander   //
         //////////////////////////////////////////////////////////////////////////
         REQUIRE(test_list.swap(4, 5) == true);
         tmp = tmp->next;
